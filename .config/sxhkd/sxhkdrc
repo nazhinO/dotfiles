@@ -8,11 +8,22 @@ super + Return
 
 # program launcher
 super + @space
-	dmenu_run
+	rofi -show drun
 
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
+
+#
+# custom hotkeys
+#
+
+# F1-F12 keys
+super + {F1, F2, F4, F5, F8, F9}
+	{thunar, galculator,retext, mailspring, brave, discord}
+
+super + {F3, F11, F12}
+	sakura -e {vim, pamix, htop}
 
 #
 # bspwm hotkeys
